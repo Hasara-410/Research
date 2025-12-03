@@ -22,22 +22,23 @@
             android:id="@+id/tvAppName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="0dp"
             android:text="LankaLens"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="@color/lanka_green" />
+            android:textColor="@color/lanka_green"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
+        <!-- Name -->
         <TextView
             android:id="@+id/tvCreate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="20dp"
             android:text="Create Account"
-            android:textSize="16sp"
-            android:textColor="@android:color/black" />
+            android:textColor="@color/lanka_green_dark"
 
-        <!-- Name -->
+            android:textSize="20sp" />
+
         <EditText
             android:id="@+id/etName"
             android:layout_width="match_parent"
@@ -99,7 +100,10 @@
             android:text="Sign Up"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:backgroundTint="@color/lanka_green" />
+            android:background="@drawable/btn_gradient"
+            app:backgroundTint="@null"
+            app:cornerRadius="24dp"
+          />
 
         <!-- OR line -->
         <LinearLayout
