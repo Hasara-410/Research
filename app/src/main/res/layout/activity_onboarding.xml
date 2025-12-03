@@ -26,13 +26,14 @@
 
         <TextView
             android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Step into Ancient Lanka"
             android:textColor="@color/lanka_green_dark"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
 
         <TextView
             android:id="@+id/tvDesc"
@@ -68,19 +69,21 @@
             <View
                 android:layout_width="24dp"
                 android:layout_height="4dp"
-                android:background="@color/lanka_green" />
+                android:background="@drawable/indicator_active"
+
+                />
 
             <View
                 android:layout_width="8dp"
                 android:layout_height="4dp"
                 android:layout_marginStart="4dp"
-                android:background="@android:color/darker_gray" />
+                android:background="@drawable/indicator_inactive" />
 
             <View
                 android:layout_width="8dp"
                 android:layout_height="4dp"
                 android:layout_marginStart="4dp"
-                android:background="@android:color/darker_gray" />
+                android:background="@drawable/indicator_inactive" />
 
         </LinearLayout>
 
