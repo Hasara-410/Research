@@ -1,33 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_lankalens_logo" />
 
     <TextView
+        android:id="@+id/tvAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
         android:text="LankaLens"
-        android:textSize="22sp"
-        android:textStyle="bold"
         android:textColor="@color/lanka_green"
-        android:layout_marginTop="24dp"/>
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
+    <!-- Title -->
     <TextView
+        android:id="@+id/tvCreate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Verify Code"
-        android:textSize="18sp"
-        android:layout_marginTop="8dp" />
+        android:textColor="@color/lanka_green_dark"
+        android:textSize="20sp" />
 
+    <!-- Description -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Enter the code we just sent you on your registered Email" />
+        android:layout_marginTop="16dp"
+        android:text="Enter the code we just sent you on your registered Email"
+        android:textColorLink="#6B7280"
+        android:gravity="center" />
 
-    <!-- Simple one EditText instead of 6 boxes (easier to code) -->
+    <!-- Code input -->
     <EditText
         android:id="@+id/etCode"
         android:layout_width="match_parent"
@@ -38,7 +53,8 @@
         android:paddingStart="16dp"
         android:background="@drawable/bg_input" />
 
-    <Button
+    <!-- Gradient Verify button -->
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnVerify"
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -46,7 +62,9 @@
         android:text="Verify"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:backgroundTint="@color/lanka_green" />
+        android:background="@drawable/btn_gradient"
+        app:backgroundTint="@null"
+        app:cornerRadius="24dp" />
 
     <TextView
         android:id="@+id/tvResend"

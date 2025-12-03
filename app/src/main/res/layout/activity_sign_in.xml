@@ -111,7 +111,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Don’t have an account yet? Sign up"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_blue_dark" />
 
     </LinearLayout>
 </ScrollView>
