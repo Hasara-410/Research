@@ -29,9 +29,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Step into Ancient Lanka"
+            android:textColor="@color/lanka_green_dark"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/lanka_green" />
+            android:textAlignment="center"/>
 
         <TextView
             android:id="@+id/tvDesc"
@@ -39,9 +40,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Experience the magic Sri Lanka’s rich heritage in full 3D, anywhere, anytime, with LankaLens."
-            android:textSize="14sp" />
+            android:textColorLink="#6B7280"
+            android:textSize="14sp"
+            android:textAlignment="center"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnNext"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -49,7 +52,9 @@
             android:text="Next"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:backgroundTint="@color/lanka_green" />
+            android:background="@drawable/btn_gradient"
+            app:backgroundTint="@null"
+            app:cornerRadius="24dp" />
 
         <!-- Dots + Skip row -->
         <LinearLayout

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="lanka_green">#1BA34A</color>
-    <color name="lanka_green_dark">#0C7A32</color>
+    <color name="lanka_green">#56BD66</color>
+    <color name="lanka_green_dark">#348D62</color>
+    <color name="font_color">#6B7280</color>
 
 </resources>

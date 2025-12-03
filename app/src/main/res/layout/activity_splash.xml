@@ -26,12 +26,12 @@
             android:id="@+id/tvAppName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="12dp"
             android:text="LankaLens"
+            android:textColor="@color/lanka_green_dark"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="@color/lanka_green"
-            android:layout_gravity="center_horizontal" />
+            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
