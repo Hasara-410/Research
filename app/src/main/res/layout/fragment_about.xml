@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/lanka_green"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvAboutText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This app is designed to bring history to life through modern technology. It allows users to explore archaeological and heritage sites in an interactive way using Mixed Reality, real-time location tracking, AI-based reconstruction, and gamified experiences.
+
+Users can discover hidden stories, view reconstructed ancient inscriptions, and navigate sites with smart maps. The app also helps youth and travelers engage with history in a fun and meaningful way.
+
+By combining education and exploration, this app makes learning about the past simple, immersive, and exciting for everyone."
+            android:lineSpacingExtra="4dp" />
+    </LinearLayout>
+</ScrollView>

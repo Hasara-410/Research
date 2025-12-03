@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Top image -->
+    <ImageView
+        android:id="@+id/imgOnboarding"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_onboarding_sample" />
+
+    <!-- Bottom card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step into Ancient Lanka"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/lanka_green" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Experience the magic Sri Lanka’s rich heritage in full 3D, anywhere, anytime, with LankaLens."
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/lanka_green" />
+
+        <!-- Dots + Skip row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal">
+
+            <!-- Fake page indicator -->
+            <View
+                android:layout_width="24dp"
+                android:layout_height="4dp"
+                android:background="@color/lanka_green" />
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="4dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="4dp"
+                android:background="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Skip"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+</LinearLayout>
