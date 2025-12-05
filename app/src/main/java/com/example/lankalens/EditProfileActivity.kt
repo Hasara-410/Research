@@ -10,7 +10,7 @@ class EditProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_profile)
 
-        val btnSave: Button = findViewById(R.id.btnSave)
+        val btnSave: Button = findViewById(R.id.btnEditProfile)
         val btnCancel: Button = findViewById(R.id.btnCancel)
 
         btnSave.setOnClickListener {
