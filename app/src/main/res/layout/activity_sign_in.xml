@@ -16,7 +16,8 @@
             android:id="@+id/imgLogo"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/ic_lankalens_logo" />
+            android:src="@drawable/ic_lankalens_logo"
+            android:layout_marginTop="32dp"/>
 
         <TextView
             android:id="@+id/tvAppName"
@@ -43,7 +44,7 @@
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="32dp"
             android:hint="Your Email"
             android:inputType="textEmailAddress"
             android:paddingStart="16dp"
@@ -53,7 +54,7 @@
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="10dp"
             android:hint="Password"
             android:inputType="textPassword"
             android:paddingStart="16dp"

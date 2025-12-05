@@ -14,7 +14,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:layout_marginTop="32dp">
 
             <ImageView
                 android:id="@+id/imgUser"
@@ -46,61 +47,181 @@
             android:paddingStart="16dp"
             android:background="@drawable/bg_input" />
 
-        <!-- Banner image -->
-        <ImageView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/img_banner_history" />
+            >
 
-        <!-- Feature buttons -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_banner_history" />
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ================= FEATURE CARDS (replacing buttons) ================= -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="16dp">
 
-            <Button
+            <!-- Card 1: MR Visualization -->
+            <LinearLayout
                 android:id="@+id/btnMR"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="MR Visualization"
-                android:textAllCaps="false"
-                android:backgroundTint="@color/lanka_green"
-                android:textColor="@android:color/white"
-                android:layout_marginBottom="8dp" />
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true">
 
-            <Button
+                <!-- Left gradient card -->
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_gradient"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_mr"
+                        android:tint="@android:color/white" />
+                </FrameLayout>
+
+                <!-- Right text -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="16dp"
+                    android:text="MR Visualization"
+                    android:textSize="14sp"
+                    android:textColor="#111827" />
+            </LinearLayout>
+
+            <!-- Card 2: Live Location Map -->
+            <LinearLayout
                 android:id="@+id/btnMap"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Live Location Map"
-                android:textAllCaps="false"
-                android:backgroundTint="@color/lanka_green"
-                android:textColor="@android:color/white"
-                android:layout_marginBottom="8dp" />
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true">
 
-            <Button
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_gradient"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_map"
+                        android:tint="@android:color/white" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="16dp"
+                    android:text="Live Location Map"
+                    android:textSize="14sp"
+                    android:textColor="#111827" />
+            </LinearLayout>
+
+            <!-- Card 3: Inscription Reconstructor -->
+            <LinearLayout
                 android:id="@+id/btnInscription"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Inscription Reconstructor"
-                android:textAllCaps="false"
-                android:backgroundTint="@color/lanka_green"
-                android:textColor="@android:color/white"
-                android:layout_marginBottom="8dp" />
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true">
 
-            <Button
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_gradient"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_inscription"
+                        android:tint="@android:color/white" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="16dp"
+                    android:text="Inscription Reconstructor"
+                    android:textSize="14sp"
+                    android:textColor="#111827" />
+            </LinearLayout>
+
+            <!-- Card 4: Gamified Experience -->
+            <LinearLayout
                 android:id="@+id/btnGame"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Gamified Experience"
-                android:textAllCaps="false"
-                android:backgroundTint="@color/lanka_green"
-                android:textColor="@android:color/white" />
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_gradient"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_game"
+                        android:tint="@android:color/white" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="16dp"
+                    android:text="Gamified Experience"
+                    android:textSize="14sp"
+                    android:textColor="#111827" />
+            </LinearLayout>
 
         </LinearLayout>
+        <!-- =============== END FEATURE CARDS =============== -->
 
     </LinearLayout>
 </ScrollView>

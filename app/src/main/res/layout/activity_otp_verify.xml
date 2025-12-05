@@ -11,7 +11,8 @@
         android:id="@+id/imgLogo"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@drawable/ic_lankalens_logo" />
+        android:src="@drawable/ic_lankalens_logo"
+        android:layout_marginTop="32dp"/>
 
     <TextView
         android:id="@+id/tvAppName"
@@ -38,27 +39,99 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Enter the code we just sent you on your registered Email"
+        android:text="Enter the the code we just sent you on your registered Email"
         android:textColorLink="#6B7280"
         android:gravity="center" />
 
-    <!-- Code input -->
-    <EditText
-        android:id="@+id/etCode"
+    <!-- ✅ NEW PART: 6 OTP boxes row -->
+    <LinearLayout
+        android:id="@+id/layoutOtpBoxes"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:hint="Enter code"
-        android:inputType="number"
-        android:paddingStart="16dp"
-        android:background="@drawable/bg_input" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <EditText
+            android:id="@+id/etCode1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_otp_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etCode2"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_otp_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etCode3"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_otp_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etCode4"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_otp_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etCode5"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_otp_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etCode6"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_otp_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <!-- ✅ END of new part -->
+
 
     <!-- Gradient Verify button -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnVerify"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:text="Verify"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
